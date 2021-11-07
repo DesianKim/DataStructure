@@ -17,5 +17,6 @@
     <ClInclude Include="vector_iterator.h" />
     <ClInclude Include="node.h" />
     <ClInclude Include="list_iterator.h" />
+    <ClInclude Include="stack.h" />
   </ItemGroup>
 </Project>

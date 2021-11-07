@@ -93,6 +93,7 @@
     <ClInclude Include="list_iterator.h" />
     <ClInclude Include="node.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="stack.h" />
     <ClInclude Include="vector.h" />
     <ClInclude Include="vector_iterator.h" />
   </ItemGroup>
