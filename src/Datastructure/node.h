@@ -4,11 +4,13 @@
 namespace std_study
 {
 	template<typename T>
-	class node
+	class node final
 	{
 	public:
-		template<typename T> friend class list;
+		using Node = node<T>;
+
 		template<typename T> friend class list_iterator;
+		template<typename T> friend class list;
 
 	public:
 		explicit node(const T& data) noexcept
@@ -18,20 +20,21 @@ namespace std_study
 		{
 		}
 
-		node(const T& data, node* prev, node* next) noexcept
+		node(const T& data, Node* prev, Node* next) noexcept
 			: data_(data),
 			prev_(prev),
 			next_(next)
 		{
 		}
 
-		virtual ~node()
+		~node() noexcept
 		{
 		}
 
 	private:
+		Node* prev_;
+		Node* next_;
 		T data_;
-		node* prev_;
-		node* next_;
-	};
-}
+
+	}; //class node final
+} //namespace std_study
