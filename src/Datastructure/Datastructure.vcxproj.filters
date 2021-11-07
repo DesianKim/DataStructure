@@ -9,12 +9,13 @@
   <ItemGroup>
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="list.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="list.h" />
     <ClInclude Include="vector.h" />
     <ClInclude Include="vector_iterator.h" />
+    <ClInclude Include="node.h" />
+    <ClInclude Include="list_iterator.h" />
   </ItemGroup>
 </Project>
